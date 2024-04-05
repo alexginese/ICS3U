@@ -1,5 +1,5 @@
-//Part 1
-//Creating variables for lenght and width
+;//Part 1
+//Creating variables for length and width
 let length = 10;
 let width = 5;
 //Creating area variable
@@ -12,4 +12,4 @@ let first_name = "Santa";
 var last_name = "Claws";
 var last_name = "Claus";
 //Output using the variables created
-console.log("I still believe in",first_name,last_name+".")
+console.log("I still believe in",first_name,last_name+".");

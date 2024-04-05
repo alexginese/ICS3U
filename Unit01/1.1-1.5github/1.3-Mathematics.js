@@ -5,7 +5,7 @@ let fahrenheit = 0;
 //Using equation to change celcius to fahrenheint
 fahrenheit = (celsius * 9/5) + 32;
 //Output fahrenheint
-console.log(fahrenheit)
+console.log(fahrenheit);
 //Part 2
 //change fahrenehit value to 77
 fahrenheit = 77;
