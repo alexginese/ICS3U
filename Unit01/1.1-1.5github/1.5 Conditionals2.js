@@ -32,7 +32,7 @@ else {
     console.log("Invalid selection.");
 }
 
-// Optional challenge 1: Time of day greeting
+// challenge 1
 let hour = parseInt(prompt("Enter an hour between 0-23: "));
 
 if (hour >= 0 && hour <= 11) {
