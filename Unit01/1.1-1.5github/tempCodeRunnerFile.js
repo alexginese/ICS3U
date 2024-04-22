@@ -1,28 +1,56 @@
-// Part 1
-//Create variables for celcius and fahrenheint
-let celsius = 100;
-let fahrenheit = 0;
-//Using equation to change celcius to fahrenheint
-fahrenheit = (celsius * 9/5) + 32;
-//Output fahrenheint
-console.log(fahrenheit)
-//Part 2
-//change fahrenehit value to 77
-fahrenheit = 77;
-////Using equation to change fahrenheint to celcius
-celsius = (fahrenheit - 32) * 5/9;
-//Output celcius
-console.log(celsius);
-//Part 3
-//Output using celcius variabley
-console.log("77 degrees Fahrenheit is",celsius,"degrees celsius.");
-//Last Part
-//Create variable
-x1 = -4;
-y1 = 5;
-x2 = 6;
-y2 = 0;
-//Use equation
-m = (y2 - y1)/(x2 - x1);
-//print answer
-console.log("The slope is equal to",m);
+const prompt = require('prompt-sync')();
+//make function whoAreYou
+function whoAreYou() {
+    let name = prompt("What is your name?");
+    let age = prompt("How old are you?");
+    let favouriteHobby = prompt("What is your favourite hobby?");
+    //output  
+    console.log("Hello" + name + "you are" + age + "years old and your favourite hobby is" + favouriteHobby);
+}
+function tax_calculator(dollars) {
+    dollars = (dollars);
+    //calc the tax 
+    let tax = (dollars * 0.13).toFixed(2);
+    //calc the total
+    let total = (dollars + taxCalc).toFixed(2);
+    //output
+    console.log(`Original Value: ${dollars.toFixed(2)}\nTax (13%): ${taxCalc.toFixed(2)}\nTotal: ${total.toFixed(2)}`);
+}
+
+function calculator(operator) {
+    let num1 = prompt("Enter the first number:");
+    let num2 = prompt("Enter the second number:");
+    //conditinals
+    if (operator === '+') {
+        console.log(num1 + num2);
+    } 
+    else if (operator === '-') {
+        console.log(num1 - num2);
+    } 
+    else if (operator === '*') {
+        console.log(num1 * num2);
+    } 
+    else if (operator === '/') {
+        console.log(num1 / num2);
+    } 
+    else {
+        console.log("Invalid operator.");
+    }
+}
+function pythagorean(legA, legB, hypoteneuse) {
+    // if hypoteneuse is false
+    if (!hypoteneuse) {
+        //output
+        console.log(Math.sqrt(legA * legA + legB * legB));
+    }
+    // if legA is false
+    else if (!legA) {
+        //output
+        console.log(Math.sqrt(hypoteneuse * hypoteneuse - legB * legB));
+    } 
+    // if legB is false
+    else {
+    //output
+        console.log(Math.sqrt(hypoteneuse * hypoteneuse - legA * legA));
+    }
+}
