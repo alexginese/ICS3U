@@ -14,7 +14,7 @@ function tax_calculator(dollars) {
     //calc the total
     let total = (dollars + taxCalc).toFixed(2);
     //output
-    console.log(`Original Value: ${dollars.toFixed(2)}\nTax (13%): ${taxCalc.toFixed(2)}\nTotal: ${total.toFixed(2)}`);
+    console.log(`Original Value: ${dollars.toFixed(2)} Tax (13%): ${taxCalc.toFixed(2)} Total: ${total.toFixed(2)}`);
 }
 
 function calculator(operator) {
